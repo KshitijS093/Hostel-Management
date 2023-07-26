@@ -1,0 +1,26 @@
+.mr2 h2 {
+    margin-left: -10px;
+  }
+  .middle1 p {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .middle1 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "mr1 mr1 mr2 mr2 mr2 mr2"
+      "mr3 mr3 mr3 mr3 mr4 mr4";
+  }
+  .mr1 {
+    grid-area: mr1;
+  }
+  .mr2 {
+    grid-area: mr2;
+  }
+  .mr3 {
+    grid-area: mr3;
+  }
+  .mr4 {
+    grid-area: mr4;
+  }

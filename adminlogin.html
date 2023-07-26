@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <script>
+    alert("Enter username and password to login");
+  </script>
+  <div class="main">
+    <img src="images/20221126_095839.jpg" alt="">
+  </div>
+  <div class="header">
+    <div class="stickyone">
+      <div class="heading sticky">
+        <img src="images/logo.png" class="logo llogo">
+        <h1 class="clgname">BMS EDUCATIONAL TRUST HOSTELS</h1>
+      </div>
+    </div>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form name="lgform" action="/adminLoggingIn" method="post" onsubmit="return lgvalidate()">
+        <div class="user-box">
+          <input type="text" name="lguser" required="">
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="password" required="">
+          <label>Password</label>
+        </div>
+        <div id="nosub">
+          <button type="submit">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+        </div>
+      </form>
+    </div>
+  </div> 
+  <script>
+    function lgvalidate() {
+      let MainString = lgform.lguser.value;
+      let index = MainString.search(/@bmsce.ac.in/);
+      if (index == -1) {
+        alert("Username should contain @bmsce.ac.in");
+        return false;
+      } else {
+        // alert("Login Successful");
+        return true;
+      }
+    }
+  </script>
+</body>
+
+</html>

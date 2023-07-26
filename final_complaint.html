@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Home_and_Profile.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/complaint.css">
+</head>
+<style>
+    
+</style>
+<script>
+    function cfvalidate() {
+        let cfc = cfform.roc.value;
+        let cfflag = 0;
+        let cfc1 = cfform.aos.value;
+        let cfflag1 = 0;
+        let toafv = cfform.fr.value;
+        let toatv = cfform.to.value;
+        for (var i = 0; i < cfc.length; i++) {
+            var char2 = cfc.charAt(i);
+            var cc1 = char2.charCodeAt(0);
+            if ((cc1 > 47 && cc1 < 58) || (cc1 > 64 && cc1 < 91) || (cc1 > 96 && cc1 < 123) || (cc1 == 32) || (cc1 == 10)) {
+
+            }
+            else {
+                cfflag = 1;
+            }
+        }
+        for (var i = 0; i < cfc1.length; i++) {
+            var char3 = cfc1.charAt(i);
+            var cc2 = char3.charCodeAt(0);
+            if ((cc2 > 47 && cc2 < 58) || (cc2 > 64 && cc2 < 91) || (cc2 > 96 && cc2 < 123) || (cc2 == 32) || (cc2 == 10)) {
+            }
+            else {
+                cfflag1 = 1;
+            }
+        }
+        if (toafv == "10") {
+            toafv = 0.1;
+        }
+        if (toafv == "11") {
+            toafv = 0.2;
+        }
+        if (toafv == "12") {
+            toafv = 0.3;
+        }
+        if (toatv == "10") {
+            toatv = 0.1;
+        }
+        if (toatv == "11") {
+            toatv = 0.2;
+        }
+        if (toatv == "12") {
+            toatv = 0.3;
+        }
+        if (cfflag == 1) {
+            alert("Reason given should be in alphanumeric");
+        }
+        else if (cfflag1 == 1) {
+            alert("Anything else block given should be in alphanumeric");
+        }
+        else if (toafv > toatv) {
+            alert("To time is less than From time");
+        }
+        else if (toafv == toatv) {
+            alert("To time is equal to From time");
+        }
+        else {
+            alert("Your Complaint is noted and will be resolved as soon as possible");
+        }
+    }
+</script>
+
+<body>
+    <div class="lealogo">
+        <img src="images/logo.png" alt="error" class="lealogo1">
+    </div>
+    <div class="container">
+        <form name="cfform" action="/userComplaintIn" method="post" id="survey-form" onsubmit="cfvalidate();">
+            <div>
+                <div id="complain">
+                    <h1>
+                        COMPLAINT BOX
+                    </h1>
+                </div>
+                <div class="form">
+                    <label for="complaint">Complaint Regarding</label>
+                    <select id="complaint" class="scr" name="complainttype" required>
+                        <option value="a">Electrical</option>
+                        <option value="b">Mechanical</option>
+                        <option value="c">Plumbing</option>
+                        <option value="d">Ragging</option>
+                    </select>
+                    <br><br>
+                    <label for="time" class="toa">Time of availability</label>
+                    <label for="from" class="lfrom">From-</label>
+                    <select name="fr" class="sfr" id="from" required>
+                        <option value="10">10 am</option>
+                        <option value="11">11 am</option>
+                        <option value="12">12 am</option>
+                        <option value="1">1 pm</option>
+                        <option value="2">2 pm</option>
+                        <option value="3">3 pm</option>
+                        <option value="4">4 pm</option>
+                        <option value="5">5 pm</option>
+                    </select>
+                    <label class="lto" for="to">To-</label>
+                    <select name="to" class="sto" id="to" required>
+                        <option value="11">11 am</option>
+                        <option value="12">12 am</option>
+                        <option value="1">1 pm</option>
+                        <option value="2">2 pm</option>
+                        <option value="3">3 pm</option>
+                        <option value="4">4 pm</option>
+                        <option value="5">5 pm</option>
+                        <option value="6">6 pm</option>
+                    </select>
+                    <br><br>
+                    <label for="roc">Reason for complain </label>
+                    <textarea id="roc" name="roc" cols="60" rows="5" placeholder="Specify the reason..."
+                        requierd></textarea>
+                    <br><br>
+                    <label for="aos">Anything else </label>
+                    <textarea id="aos" name="aos" cols="60" rows="5" placeholder="Anything else..." required></textarea>
+                    <br><br>
+                    <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
+    </div>
+    </form>
+    </div>
+    <div class="lback">
+        <div class="bthp">
+            <button type="submit" class="btn"><a href="/afterloginhome">Back</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

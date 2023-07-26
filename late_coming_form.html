@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/Home_and_Profile.css">
+    <script>
+        const isValidUrl = urlString => {
+            var inputElement = document.createElement('input');
+            inputElement.type = 'url';
+            inputElement.value = urlString;
+
+            if (!inputElement.checkValidity()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function lcvalidate() {
+            let lca = lcform.message.value;
+            let lcflag = 0;
+            let lcb = lcform.link.value;
+            for (var i = 0; i < lca.length; i++) {
+                var char2 = lca.charAt(i);
+                var cc3 = char2.charCodeAt(0);
+                if ((cc3 > 47 && cc3 < 58) || (cc3 > 64 && cc3 < 91) || (cc3 > 96 && cc3 < 123) || (cc3 == 32) || (cc3 == 10)) {
+
+                }
+                else {
+                    lcflag = 1;
+                }
+            }
+            if (lcflag == 1) {
+                alert("Reason given should be in alphanumeric");
+            }
+            
+            else if (isValidUrl(lcb)) {
+                alert("Share correct link");
+            }
+            else {
+                alert("Late Coming Application approved. Reach the hostel as soon as possible");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="lealogo">
+        <img src="images/logo.png" alt="error" class="lealogo1">
+    </div>
+    <div class="container">
+        <form name="lcform" action="/userLateComingIn" method="post" id="survey-form" onsubmit="lcvalidate();">
+            <div>
+                <h1 class="lcatitl">LATE COMING APPLICATION</h1>
+            </div>
+            <div class="rlc">
+                <label for="message">Reason for late coming:</label>
+                <textarea id="message" name="message" rows="4" cols="30" placeholder="Specify the reason..."></textarea>
+                <br><br>
+                <label for="link"> Share your current location:</label>
+                <textarea id="link" name="link" rows="4" cols="50" placeholder="Place the link here---"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit" class="submit">
+            </div>
+        </form>
+        </form>
+    </div>
+    <div class="lback">
+        <div class="bthp">
+            <button class="btn"><a href="/afterloginhome">Back</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

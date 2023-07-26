@@ -1,0 +1,98 @@
+.febottom{
+    height: 800px;
+    width: 100%;
+}
+.feebottom{
+    height: 720px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+    border: 2px solid grey;
+}
+.fname{
+    height: 50px;
+    width: 100%;
+    background-color: #E3E7ED;
+    color: black;
+    margin-top: -20px;
+}
+.fname1{
+    margin-left: 20px;
+    padding-top: 10px;
+}
+.fbename{
+    height: 0px;
+    width: 95%;
+    margin-left: 2.5%;
+    padding-top: 50px;
+}
+.facayear{
+    height: 130px;
+    width: 100%;
+}
+.facyear{
+    height: 100px;
+    width: 100%;
+    border: 0px solid lightgray;
+    border-spacing: 0px;
+    /* margin-top: -50px; */
+    
+}
+.fhfees{
+    height: 130px;
+    width: 100%;
+}
+.fhfe{
+    height: 50px;
+    width: 100%;
+    background-color: #00CCCC ;
+}
+.fhf{
+    color: white;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+.hfet{
+    height: 100px;
+    width: 100%;
+    border: 0px solid lightgray;
+    border-spacing: 0px;
+}
+.fmfees{
+    height: 130px;
+    width: 100%;
+}
+.lfees{
+    height: 130px;
+    width: 100%;
+}
+.button{
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    
+}
+.fpmt
+{
+    width: 100%;
+    height: 20px;
+}
+.fpimg
+{
+    width: 70px;
+    height: 70px;
+}
+.fppimg
+{
+    height: 30px;
+    width: 30px;
+}
+.fpatp
+{
+    width:20%;
+}

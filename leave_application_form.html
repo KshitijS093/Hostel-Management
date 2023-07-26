@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/Home_and_Profile.css">
+  <link rel="stylesheet" href="css/leave.css">
+  <script>
+    function isValid_Mobile_Number(mobile_number) { 
+      let regex = new RegExp(/(0|91)?[6-9][0-9]{9}/);
+      if (mobile_number == null) {
+        return true;
+      }
+      if (regex.test(mobile_number) == true) {
+        return false;
+      }
+      else {
+        return true;
+      }
+    }
+    function lavalidate() {
+      let laa = laform.From.value;
+      let lab = laform.To.value;
+      let lac = laform.messag.value;
+      let lad = laform.phone.value;
+      let laflag = 0;
+      for (var i = 0; i < lac.length; i++) {
+        var char3 = lac.charAt(i);
+        var cc4 = char3.charCodeAt(0);
+        if ((cc4 > 47 && cc4 < 58) || (cc4 > 64 && cc4 < 91) || (cc4 > 96 && cc4 < 123) || (cc4 == 32) || (cc4 == 10)) {
+
+        }
+        else {
+          laflag = 1;
+        }
+      }
+
+      if (laa > lab) {
+        alert("To date is before from date");
+      }
+      else if (laflag == 1) {
+        alert("Reason given should be in alphanumeric");
+      }
+      else if(isValid_Mobile_Number(lad))
+      {
+         alert("Enter correct phone number");
+      }
+      // else if (!((lad > "999999999") && (lad < "10000000000"))) {
+      //   alert("Enter correct phone number");
+      // }
+      else {
+        alert("Leave Granted");
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="lealogo">
+    <img src="images/logo.png" alt="error" class="lealogo1">
+  </div>
+  <div class="container">
+    <form name="laform" action="/userLeaveIn" method="post" id="survey-form" onsubmit="lavalidate();">
+      <div>
+        <h1 class="lah">LEAVE APPLICATION</h1>
+      </div>
+      <div class="leadol">
+        <big>Date of leave</b></big><br>
+        <label for="From" class="leafrom">From:</label>
+        <input type="date" id="From" name="From">
+        <label for="To">To:</label>
+        <input type="date" id="To" name="To">
+        <br><br>
+        <label for="messag">Reason for Leave:</label>
+        <textarea id="messag" name="messag" rows="6" cols="60" placeholder="Specify the reason..."></textarea>
+        <div>
+          <label for="phone" style="text-align:center;font-weight: bold">Emergency contact number</label>
+          <input class="form-control" type="tel" id="phone" name="phone" placeholder="e.g. +91 702 123 4567"
+            value="91 ">
+        </div>
+        <br>
+        <input type="submit" value="Submit" class="submit">
+      </div>
+    </form>
+  </div>
+  <div class="lback">
+    <div class="bthp">
+      <button class="btn"><a href="/afterloginhome">Back</a></button>
+    </div>
+  </div>
+</body>
+
+</html>   

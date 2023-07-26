@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/Home_and_Profile.css">
+  <script>
+    function sfvalidate() {
+      let sfb = sfform.day.value;
+      let sfa = sfform.meal.value;
+      let sfc = sfform.reviews.value;
+      let sfflag = 0;
+      for (var i = 0; i < sfc.length; i++) 
+      {
+        var char1 = sfc.charAt(i);
+        var cc = char1.charCodeAt(0);
+        if ((cc > 47 && cc < 58) || (cc > 64 && cc < 91) || (cc > 96 && cc < 123) || (cc == 32) || (cc == 10))
+        {
+
+        } 
+        else
+        {
+            sfflag = 1;
+        }
+      }
+      if(sfflag == 1)
+      {
+        alert("Suggestion given should be in alphanumeric");
+      }
+      if (sfb == "Sat") {
+        if (sfa == "sna") {
+          alert("Saturday snacks is not available");
+          clearTimeout(set);
+        }
+        if (sfa == "din") {
+          alert("Saturday Dinner is not available");
+          clearTimeout(set);
+        }
+        else {
+        if(sfflag == 0)
+        {
+          alert("Thank you for your suggestion");
+        }
+      }
+      }
+      else {
+        if(sfflag == 0)
+        {
+          alert("Thank you for your suggestion");
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="lealogo">
+    <img src="images/logo.png" alt="error" class="lealogo1">
+  </div>
+  <div class="container">
+    <form name="sfform" action="/usermesssuggestionIn" method="post" id="survey-form" onsubmit="sfvalidate();">
+      <h1>Suggestions Form</h1>
+      <form action="/thanks">
+        <br><br>
+        <b>Enter the day : </b>
+        <select name="day" id="Which" required>
+          <option value="Mon" selected>Monday</option>
+          <option value="Tue">Tuesday</option>
+          <option value="Wed">Wednesday</option>
+          <option value="Thurs">Thursday</option>
+          <option value="Fri">Friday</option>
+          <option value="Sat">Saturday</option>
+          <option value="Sun">Sunday</option>
+        </select>
+        <br><br>
+        <b>Enter the meal : </b>
+        <select name="meal" required>
+          <option value="Bf" selected>Breakfast</option>
+          <option value="lun">Lunch</option>
+          <option value="sna">Snacks</option>
+          <option value="din">Dinner</option>
+        </select>
+        <br><br>
+        <b>Suggestions : </b>
+        <br>
+        <textarea name="reviews" id="acd" cols="69" rows="7" placeholder="Enter your suggestions" required></textarea>
+        <br><br>
+        <input type="submit" value="Submit" class="submit" />
+      </form>
+
+  </div>
+  </form>
+  </form>
+  </div>
+  <div class="lback">
+    <div class="bthp">
+      <button class="btn"><a href="/afterloginhome">Back</a></button>
+    </div>
+  </div>
+</body>
+
+</html>

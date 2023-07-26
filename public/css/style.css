@@ -1,0 +1,246 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+  }
+  body{
+    margin:0px;
+    height: 600px;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .middle {
+    height: 675px;
+  }
+  .footer {
+    height: 350px;
+    background-color: black;
+    opacity:0.82;
+    color: white;
+  }
+  .floater {
+    background-color: white;
+    height: 30px;
+    padding: 7px;
+  }
+  .title {
+    background-color: white;
+    height: 120px;
+    position: sticky;
+    top: 0px;
+    opacity: 0.95;
+  }
+  .nav {
+    background-color: black;
+    height: 50px;
+    position: sticky;
+    top: 120px;
+    opacity: 0.82;
+    border: 2px transparent solid;
+  }
+  .bgimg {
+    background-color: black;
+    height: 400px;
+    background-image: url(./WhatsApp\ Image\ 2022-11-26\ at\ 10.35.03.jpeg);
+     background-size: cover;
+  }
+  /* .bgimg img{
+    height:100%;
+    width:100%;
+    filter:brightness(50%);
+  } */
+  .img {
+    background-color: rgb(0, 0, 0);
+    height: 95%;
+    width: 45%;
+    float: left;
+    margin-top: 15px;
+  }
+  .sdec {
+    height: 100%;
+    width: 55%;
+    float: right;
+  }
+  .qlink {
+    background-color: black;
+    background-image:linear-gradient(90deg,black,rgb(66, 66, 66),transparent);
+    height: 100%;
+    width: 34.25%;
+    float: right;
+    opacity: 0.85;
+    border-radius:20px;
+  }
+  /* .cinfo {
+    background-color: black;
+    background-image:linear-gradient(90deg,black,rgb(66, 66, 66),transparent);
+    filter:brightness(50%);
+    height: 100%;
+    width: 65%;
+    float: left;
+    opacity: 0.85;
+    border-radius:20px;
+  } */
+  .nav ul li {
+    display: inline-block;
+    margin-top: 15px;
+  }
+  .nav ul {
+    margin: 0px;
+    padding-left: 10px;
+  }
+  a {
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 18px;
+    color: white;
+  }
+  a:hover {
+    text-decoration: none;
+    padding: 5px 20px;
+    color:lightblue;
+  }
+  a:active {
+    text-decoration: underline;
+    padding: 5px 20px;
+    color: rgb(227, 227, 227);
+  }
+  .t1 {
+    float: left;
+    margin: 15px 7px 8px 330px;
+    font-weight: bolder;
+  }
+  .login {
+    float: right;
+    margin: 36px 77px 0px 0px;
+  }
+  img.log {
+    height: 98px;
+  }
+  .logo {
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .btn {
+    padding: 10px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    opacity: 0.82;
+    color: white;
+    border-radius: 15px;
+  }
+  .sdec p {
+    margin: 16px 11px;
+    padding: 18px;
+    font-size: 18px;
+  }
+  h2 {
+    padding: 18px;
+    margin: 10px 11px 0px 11px;
+  }
+  .cinfo a {
+    display: inline-block;
+  }
+  .cinfo {
+    padding-left: 10px;
+    color: white;
+  }
+  .cinfo a {
+    margin-left: -11px;
+    padding: 13px 10px;
+    opacity: 0.85;
+  }
+  .cinfo h2 {
+    margin-left: -20px;
+    /* text-decoration: underline; */
+    padding-bottom:20px;
+    margin-bottom:2px;
+    
+  }
+  .cinfo span {
+    font-weight: bolder;
+    padding: 20px 10px 20px 0px;
+    font-size: 17px;
+  }
+  #add {
+    font-weight: bolder;
+    font-size: 17px;
+  }
+  h3 {
+    color: white;
+    /* text-decoration: underline; */
+    padding: 30px 5px 14px 11px;
+    margin: 2px;
+  }
+  .qlink a {
+    display: block;
+    margin: 10px;
+    padding: 11px;
+    opacity: 0.85;
+  }
+  .title {
+    background-color: white;
+    height: 120px;
+    position: sticky;
+    top: 0px;
+    opacity: 0.95;
+  }
+.nav {
+    background-color: black;
+    height: 50px;
+    position: sticky;
+    top: 120px;
+    opacity: 0.82;
+    border: 2px transparent solid;
+  }
+  div.column{ 
+    width:30%;
+    height:100%;
+    display:inline-block;
+  }
+  .column img{
+    margin-left:37px;
+  }
+  #sec{
+    position:relative;
+    top: -29px;
+    margin-left:25px;
+  }
+  .icon{
+    height:30px;
+  }
+  #thi{
+    position:relative;
+    top: -6px;
+  }
+  #thi p{
+    padding:10px;
+    margin:10px;
+
+  }
+  .ending{
+    background-color: black;
+    opacity: 0.82;
+    width: 100%;
+    height: 100px;
+  }
+  #fir{
+    position:relative;
+    top: 35px;
+  }
+  #thi span{
+    padding-left:15px;
+    
+  }
+  #thi img{
+    margin-top:10px;
+  }
+  #yt{
+    margin-left:32px;
+  }
+  .icon:hover{
+    height:35px;
+  }
+  .middle1{
+    height:750px;
+  }

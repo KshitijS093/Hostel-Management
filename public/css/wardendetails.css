@@ -1,0 +1,44 @@
+.conio{
+    height:600px;
+}
+.wardendet{
+    height:290px;
+    width:50%;
+    margin:5px auto;
+    background-color: rgb(243, 243, 243);
+}
+.supervizdet{
+    height:290px;
+    width:50%;
+    margin:5px auto;
+    background-color: rgb(243, 243, 243);
+}
+.imgio{
+    height:290px;
+    width:25%;
+    float:left;
+}
+.imgio img{
+    height:98%;
+    border:2px ridge;
+}
+.detio{
+    position:relative;
+    left:115px;
+}
+.detio p{
+    padding:12px;
+    margin:3px;
+}
+a{
+ text-decoration: none;
+ color:black;
+}
+a:hover{
+    color:lightblue;
+}
+#ward{
+    margin-left: 59px;
+    margin-bottom: 44px;
+    margin-top:12px;
+}

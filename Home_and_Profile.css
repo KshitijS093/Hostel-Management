@@ -1,0 +1,430 @@
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    margin: 0px;
+}
+.topone {
+    /* ackground-color: aquamarine; */
+    background-image: url(./WhatsApp\ Image\ 2022-11-26\ at\ 10.35.03.jpeg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 400px;
+    width: 100%;
+
+}
+
+.leftone {
+    background-color: white;
+    height: 500px;
+    width: 65%;
+    float: left;
+    margin-left: 50px;
+    /* padding-top: 30px; */
+    /* padding-left: 20px; */
+}
+
+.rightone {
+    background-color: #eeeeee;
+    height: 500px;
+    width: 30%;
+    float: right;
+}
+
+.floater {
+    background-color: white;
+    height: 30px;
+    padding:7px;
+    margin-bottom: 0px;
+}
+
+.heading {
+    background-color: white;
+    opacity: 0.95;
+    height: 120px;
+    width: 100%;
+    margin-top: -15px;
+    float: left;
+    text-align: center;
+    z-index: 10;
+    overflow: auto;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    height: 55px;
+    width: 100%;
+    margin-top: -22px;
+    opacity: 0.82;
+
+}
+
+.navbar {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.qwerty {
+    float: right;
+    /* background-color: rgb(205, 203, 203); */
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.notsentence{
+    text-decoration: none;
+}
+.logo {
+    float: left;
+    padding-top: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.clgname {
+    float: left;
+    padding-left: 190px;
+    margin-left: 174px;
+    padding-top: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.profileimage {
+    padding-right: 10px;
+}
+
+#profile a {
+    padding-left: 10px;
+}
+
+.stickyone {
+    position: sticky;
+    top: 0;
+}
+
+.bottomone {
+    height: 500px;
+    width: auto;
+}
+
+.navbar li a:hover {
+    color: lightblue;
+}
+
+.navbar li a:active {
+    text-decoration: underline;
+}
+
+details>summary {
+    padding: 10px;
+    /* width: 200px; */
+    border: none;
+    cursor: pointer;
+}
+
+details>p {
+    background-color: white;
+    padding: 4px;
+    margin: 0;
+    box-shadow: 5px 5px 5px #bbbbbb;
+}
+
+/*  .sideimage {
+    background-image: url(./sideimage.jpeg);
+    height: 1000px;
+    width: 30%;
+    background-size: cover;
+    float: left; 
+} */
+
+.middle {
+    height: 500px;
+    width: 60%;
+    float: left;
+    color: black;
+}
+
+.notifications {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.readmore {
+    padding-top: -10px;
+    margin-top: -20px;
+    margin-left: 50px;
+    color: blue;
+    /* float: left;  */
+}
+
+.date {
+    float: left;
+    margin-left: 15px;
+}
+
+.day {
+    margin-top: -20px;
+    background-color: #f7f7f7;
+    height: 40px;
+    color: #0088CC;
+    text-align: center;
+}
+
+.month {
+    background-color: #0088CC;
+    color: white;
+    margin-top: -20px;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: auto;
+    margin-top: -13px;
+
+}
+
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: black;
+    margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: black;
+    color: lightblue;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.arrow{
+    font-size: 10px;
+    margin-top: -8px;
+}
+.btn {
+    padding: 10px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: black;
+    opacity: 0.82;
+    color: white;
+    border-radius: 15px;
+  }
+  .bthp{
+    float: right;
+    margin: 36px 77px 0px 0px;
+    margin-right: 20px;
+  }
+  .bthp a {
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 18px;
+    color: white;
+  }
+  .bthp a:hover {
+    text-decoration: none;
+    padding: 5px 20px;
+    color: lightblue;
+  }
+  .bthp a:active {
+    text-decoration: underline;
+    padding: 5px 20px;
+    color: lightblue;
+  }
+  summary{
+    font-weight: bold;
+  }
+  .leftp {
+    float: left;
+    height: 1000px;
+    width: 35%;
+    background-color: white;
+}
+
+.righttopp {
+    float: left;
+    height: 300px;
+    width: 65%;
+    background-color: white;
+}
+
+.rightmiddlep {
+    float: left;
+    height: 400px;
+    width: 65%;
+    background-color: white;
+}
+
+.rightbottomp {
+    float: left;
+    height: 300px;
+    width: 65%;
+    background-color: white;
+}
+
+.profilepart {
+    height: 1000px;
+    width: 100%;
+}
+
+.stickyone {
+    position: sticky;
+    top: 0;
+}
+
+.summaryp {
+    margin-left: 20px;
+    margin-top: 40px;
+    height: 280px;
+    width: 80%;
+    background-color: white;
+    /* text-align: center; */
+    padding-left: 20px;
+    padding-top: 10px;
+    border: 1px solid grey;
+    text-decoration: none;
+}
+
+.phonep {
+    margin-top: 5px;
+    text-decoration: none;
+    color: grey;
+}
+
+.emailp {
+    text-decoration: none;
+    color: grey;
+}
+
+.approvalp {
+    margin-left: 20px;
+    height: 50px;
+    width: 83.75%;
+    background-color: white;
+    text-align: center;
+    padding-top: 30px;
+    color: blue;
+    border: 1px solid grey;
+}
+
+.uppp {
+    margin-left: 20px;
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    height: 30px;
+    width: 50%;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: -20px;
+}
+
+.roppp {
+    margin-left: 20px;
+    color: white;
+    background-color: #DC3545;
+    height: 30px;
+    width: 60%;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: -10px;
+}
+.auppp{
+    text-decoration: none;
+}
+.acap {
+    color: white;
+    background-color: #00B8D4;
+    height: 40px;
+    width: 95.3%;
+    margin-top: 40px;
+    /* border:1px solid #00B8D4; */
+}
+.acadp {
+    margin-left: 20px;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+.dacap {
+    background-color: white;
+    height: 200px;
+    width: 95%;
+    border:1px solid grey; 
+}
+table, th, td{
+    text-align: left;
+}
+.emailfp{
+    text-decoration: none;
+}
+.addp{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+}
+.fdp{
+    background-color: white;
+    height: 300px;
+    width: 95%;
+    border:1px solid grey;  
+}
+h2{
+    margin-left:60px;
+}
+.lcatitl
+{
+    text-align:center;
+    margin-left: 114px;
+}
+.mpimg
+{
+    float: right;
+}
+.mppimg
+{
+    height: 30px; 
+    width: 30px;
+    margin-top:-5px;
+}
+.ptaby
+{
+    border-spacing: 15px; 
+    padding: 20px;
+}

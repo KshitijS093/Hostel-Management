@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warden-Details</title>
+    <link rel="stylesheet" href="css/Home_and_Profile.css">
+    <link rel="stylesheet" href="css/wardendetails.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <div class="floater">
+        <marquee class="qwerty wdmq" id="moving" direction="left" onmouseover="this.stop()"
+            onmouseout="this.start()">
+            <div> <a href="#firstnotification" class = "notsentence">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt exercitationem repudiandae
+                impedit atque suscipit fugit beatae culpa laboriosam voluptates unde!</a></div>
+        </marquee>
+    </div>
+    <div class="stickyone">
+        <div class="heading sticky">
+            <img src="images/logo.png" width="70px" height="70px" class="logo">
+            <h1 class="clgname">BMS EDUCATIONAL TRUST HOSTELS</h1>
+            <div class="bthp">
+                <button class="btn"><a href="/index">Website</a></button>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul type="none">
+                <li><a href="/afterloginhome">NOTIFICATIONS</a></li>
+                <li><a href="/wardendetails">WARDEN DETAILS</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">MESS
+                            <span class="arrow">&#8744</span>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="/menu">Menu</a>
+                            <a href="/suggestionsform">Suggestion Form</a>
+                        </div>
+                </li>
+                <!-- <li><a href="/FeeDetails">FEE PAYMENT</a></li> -->
+                <li><a href="/finalcomplaint">COMPLAINTS</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">APPLICATIONS 
+                            <span class="arrow">&#8744</span>
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="/leaveApplicationForm">Leave Application</a>
+                            <a href="/latecomingform">Late Coming Application</a>
+                        </div>
+                </li>
+                <form action="/profilepage" method="POST">
+                    <button type="submit" style="float: right;" id="profile">PROFILE</button>
+                  </form> 
+                <!-- <li style="float: right;" id="profile"><a href="/profilepage">PROFILE</a></li> -->
+                <li style="float: right;">
+                    <img src="images/profileimg.png" height="30px" width="30px" class="profileimage"
+                        style="margin-top:-5px;">
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <h2 id="ward">Warden & Supervisor Details</h2>
+    <div class="conio">
+        <div class="wardendet">
+            <div class="imgio"><img src="images/ward1.jpg"></div>
+            <div class="detio">
+                <p><b> Dr.Sainath K</b></p>
+                <p><b>Designation :</b> Assistant Professor</p>
+                <p><b>Department :</b> Chemical Engineering Department</p>
+                <p><b>Role :</b> Warden for NBH-3</p>
+                <p><b>Contact :</b><a href="tel:9611345982"> 9611345982 </a></p>
+                <p><b>E-mail :</b> <a href="mailto:sainath.che@bmsce.ac.in">Sainath.che@bmsce.ac.in</a></p>
+            </div>
+        </div>
+        <div class="supervizdet">
+            <div class="imgio"><img src="images/ward1.jpg"></div>
+            <div class="detio">
+                <p><b> Dr.Sainath K</b></p>
+                <p><b>Designation :</b> Assistant Professor</p>
+                <p><b>Department :</b> Chemical Engineering Department</p>
+                <p><b>Role :</b> Warden for NBH-3</p>
+                <p><b>Contact :</b><a href="tel:9611345982"> 9611345982 </a></p>
+                <p><b>E-mail :</b> <a href="mailto:sainath.che@bmsce.ac.in">Sainath.che@bmsce.ac.in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f7f7f7;
+        }
+
+        .form-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            margin-top: 20px;
+        }
+        body{
+            background-color: pink;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container" >
+        <h2 class="form-title">Student Form</h2>
+        <form method="post" formaction="/adminaddstudent">
+            <div class="mb-3">
+                <label for="input" class="form-label">Name:</label>
+                <input type="text" id="input" name="name" placeholder="Enter your name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="tel" class="form-label">Phone Number:</label>
+                <input type="tel" id="tel" name="Phonenumber" placeholder="Enter your phone number" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="input" class="form-label">Section 1:</label>
+                <input type="text" id="input" name="section1" placeholder="Enter Section 1" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="input" class="form-label">Section 2:</label>
+                <input type="text" id="input" name="section2" placeholder="Enter Section 2" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="input" class="form-label">Section 3:</label>
+                <input type="text" id="input" name="section3" placeholder="Enter Section 3" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="input" class="form-label">Parent Relation:</label>
+                <input type="text" id="input" name="ParentRelation" placeholder="Enter Parent Relation" class="form-control">
+            </div> 
+            <div class="mb-3">
+                <label for="input" class="form-label">Parent Occupation:</label>
+                <input type="text" id="input" name="ParentOccupation" placeholder="Enter Parent Occupation" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="tel" class="form-label">Parent Phone Number:</label>
+                <input type="tel" id="tel" name="ParentPhoneNumber" placeholder="Enter Parent Phone Number" class="form-control">
+            </div> 
+            <div class="mb-3">
+                <label for="email" class="form-label">Parent Email:</label>
+                <input type="email" id="email" name="ParentEmail" placeholder="Enter Parent Email" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Address:</label>
+                <textarea class="form-control" name="address" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your address"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="input" class="form-label">Hostel Type:</label>
+                <input type="text" id="input" name="HostelType" placeholder="Enter Hostel Type" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="number" class="form-label">Room Number:</label>
+                <input type="number" id="number" name="RoomNumber" placeholder="Enter Room Number" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="input" class="form-label">Roommate Name:</label>
+                <input type="text" id="input" name="RoommateName" placeholder="Enter Roommate Name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="tel" class="form-label">Roommate Phone Number:</label>
+                <input type="tel" id="tel" name="RoommatePhoneNumber" placeholder="Enter Roommate Phone Number" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Roommate Email ID:</label>
+                <input type="email" id="email" name="RoommateEmailID" placeholder="Enter Roommate Email ID" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Hostel Address:</label>
+                <textarea class="form-control" name="HostelAddress" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Hostel Address"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="inputPassword5" class="form-label">Password:</label>
+                <input type="password" id="inputPassword5" name="password" class="form-control" aria-labelledby="passwordHelpBlock" placeholder="Enter a password">
+                <div id="passwordHelpBlock" class="form-text">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emojis.
+                </div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Verified</label>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
