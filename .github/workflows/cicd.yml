@@ -46,4 +46,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: krishnmaloo/hostel-management-app:1
+          tags: krishnmaloo/hostel-management-app:latest
