@@ -1,13 +1,5 @@
 version: "3.9"
 services:
-  mongodb:
-    image: mongo:latest
-    container_name: my-mongodb
-    restart: always
-    networks:
-      - app-network
-    command: mongod --bind_ip 0.0.0.0  # Add this line to bind to all available network interfaces
-
   app:
     build:
       context: .
@@ -15,13 +7,3 @@ services:
     container_name: my-node-app
     ports:
       - "3000:3000"
-    depends_on:
-      - mongodb
-    environment:
-      - MONGODB_URL=mongodb://host.docker.internal:27017/personDB  # Use the host's IP address
-    networks:
-      - app-network
-
-networks:
-  app-network:
-    driver: bridge

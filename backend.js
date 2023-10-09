@@ -23,7 +23,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-const uri = "mongodb://mongodb:27017/personDB";
+const uri = "mongodb+srv://krishn:krishn@hosteldb.qeyabl1.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 // mongoose.set("userCreateIndex",true);
 
